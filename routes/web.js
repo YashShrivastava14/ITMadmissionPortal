@@ -5,11 +5,11 @@ const checkAuth = require('../middleware/auth')
 const AdminController = require('../controller/Admin/AdminController')
 const router = express.Router()
 
-router.get('/',checkAuth, FrontController.home)
+router.get('/dashboard',checkAuth, FrontController.home)
 router.get('/about',checkAuth,FrontController.about)
 router.get('/admission',checkAuth,FrontController.admission)
 router.get('/clubs',checkAuth,FrontController.clubs)
-router.get('/login',FrontController.login)
+router.get('/',FrontController.login)
 router.get('/registration',FrontController.registration)
 
 // user input

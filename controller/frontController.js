@@ -146,21 +146,21 @@ class FrontController {
                             const token = jwt.sign({ id: user._id }, 'yash14')
                             // console.log(token)
                             res.cookie('token', token)
-                            res.redirect('/')
+                            res.redirect('/dashboard')
                         }
 
 
                     } else {
                         req.flash('error', 'Password is incorrect')
-                        res.redirect('/login')
+                        res.redirect('/')
                     }
                 } else {
                     req.flash('error', 'This Email is not registered')
-                    res.redirect('/login')
+                    res.redirect('/')
                 }
             } else {
                 req.flash('error', 'Please enter all your credentials')
-                res.redirect('/login')
+                res.redirect('/')
             }
         } catch (error) {
             console.log(error)
@@ -171,7 +171,7 @@ class FrontController {
     static logout = async (req, res) => {
         try {
             res.clearCookie('token')
-            res.redirect('/login')
+            res.redirect('/')
         } catch (error) {
             console.log(error)
         }
