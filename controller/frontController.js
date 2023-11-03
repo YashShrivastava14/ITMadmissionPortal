@@ -20,7 +20,7 @@ class FrontController {
             const bca = await CoursemodelP.findOne({ userId: _id, course: 'BCA' })
             const mtech = await CoursemodelP.findOne({ userId: _id, course: 'Mtech' })
 
-            res.render('home', { n: name, i: image, e: email, b: btech, bca: bca, m: mtech })
+            res.render('Home', { n: name, i: image, e: email, b: btech, bca: bca, m: mtech })
         } catch (error) {
             console.log(error)
         }
@@ -29,7 +29,7 @@ class FrontController {
     static about = (req, res) => {
         try {
             const { name, image, _id} = req.user
-            res.render('about',{n:name, i:image})
+            res.render('About',{n:name, i:image})
         } catch (error) {
             console.log(error)
         }
@@ -66,14 +66,14 @@ class FrontController {
     }
     static login = (req, res) => {
         try {
-            res.render('login', { msg2: req.flash('error') })
+            res.render('Login', { msg2: req.flash('error') })
         } catch (error) {
             console.log(error)
         }
     }
     static registration = (req, res) => {
         try {
-            res.render('registration', { message: req.flash('error') })
+            res.render('Registration', { message: req.flash('error') })
         } catch (error) {
             console.log(error)
         }
