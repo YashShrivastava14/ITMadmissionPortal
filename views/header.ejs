@@ -42,7 +42,7 @@
         }
 
         footer {
-            margin-top: 100px;
+            /* margin-top: 100px; */
             background-image: url('images/footer-bg.png');
             /* background-color: #042135; */
             /* border: 2px solid blue; */
@@ -51,7 +51,7 @@
 
         .footerdiv {
             font-size: larger;
-            margin-top: 37px;
+            padding-top: 17px;
             font-weight: 400;
             letter-spacing: 1px;
 
@@ -66,7 +66,7 @@
         }
 
         ::marker {
-            color:#780b0d;
+            color:#78660b;
             /* font-size:1rem; */
         }
 
@@ -132,13 +132,13 @@
 
 /* homepage CSS */
 .home_bg{
-background-color:#9411131e;
+background-color:#98171911;
 margin-top: 50px;
 padding-bottom: 10px;
 
 }
 
-h4{
+h3{
     /* font-size: 24px; */
     font-weight: 500;
     color:#600a0c;
@@ -148,6 +148,16 @@ h4{
     text-align: center;
     background-color: #caebf092;
     padding-bottom: 80px;
+}
+
+.clubs_bg{
+background-color:#9411131e;
+margin-top: 50px;
+padding-bottom: 10px;
+padding-top: 7px;
+}
+.clubs_p{
+    display: block;
 }
      
     </style>
@@ -175,7 +185,7 @@ h4{
 
             <div class="navbar-collapse collapse " id="a">
                 <ul class="navbar-nav ms-auto">
-                    <a href="/" class="nav-link">
+                    <a href="/dashboard" class="nav-link">
                         <li>HOME</li>
                     </a>
                     <a href="/about" class="nav-link">
@@ -206,46 +216,3 @@ h4{
     </nav> <!--navbar end-->
 
     <br><br><br><br>
-
-
-    <!-- 
-    <div class="modal fade" id="profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">B Tech</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-               <form action="/course_input" method="post">
-                <div class="mb-3">
-                  <label>Name:</label>
-                  <input type="text" name="name" value="" class="form-control" >
-                </div>
-                <div class="mb-3">
-                  <label>Email:</label>
-                  <input type="email" name="email" value="" class="form-control" >
-                </div>
-                <div class="mb-3">
-                  <label>Phone:</label>
-                  <input type="number" name="phone" class="form-control" >
-                </div>
-                <div class="mb-3">
-                  <label>City:</label>
-                  <input type="text" name="city" class="form-control" >
-                </div>
-                <div class="mb-3">
-                  <label>Address:</label>
-                  <input type="text" name="address" class="form-control" >
-                </div>
-                <div class="mb-3">
-                  <label>Course:</label>
-                  <input type="text" name="course" value="Btech" class="form-control" >
-                </div>
-                <button class="btn btn-info" type="submit">Submit</button>
-                </form>
-            </div>
-           
-          </div>
-        </div>
-      </div> -->
