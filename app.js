@@ -12,7 +12,7 @@ app.use(cookieParser())
 
 //Tempfiles uploader
 app.use(fileUpload({useTempFiles:true}))
-// database Connectivity
+// database  Connectivity
 connectDB()
 
 //routing      *This is done in web.js file*
