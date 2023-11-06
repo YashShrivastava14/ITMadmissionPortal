@@ -15,7 +15,7 @@ app.use(fileUpload({useTempFiles:true}))
 // database  Connectivity
 connectDB()
 
-//routing      *This is done in web.js file*
+//routing  *This is done in web.js file*
 // app.get('/', frontController.home)
 // app.get('/team', frontController.team)
 // app.get('/about', frontController.about)
