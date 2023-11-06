@@ -10,7 +10,7 @@ const fileUpload = require('express-fileupload')
 const cookieParser = require('cookie-parser')
 app.use(cookieParser())
 
-//Tempfiles uploaderz
+//Tempfiles uploader
 app.use(fileUpload({useTempFiles:true}))
 // database Connectivity
 connectDB()
