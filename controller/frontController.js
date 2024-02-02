@@ -109,7 +109,8 @@ class FrontController {
                             }
                         })
                         await result.save()
-                        res.redirect('/login')
+                        console.log("object")
+                        res.redirect('/')
                     }
                     catch (error) {
                         console.log(error)
@@ -213,7 +214,7 @@ class FrontController {
                             password: newHashPassword
                         })
                         req.flash('success', 'Password Updated successfully ')
-                        res.redirect('/login')
+                        res.redirect('/')
                     }
                 }
             } else {
