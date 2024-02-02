@@ -80,11 +80,12 @@ class FrontController {
     }
 
     static userInput = async (req, res) => {
-        // console.log(req.files.image)
+        console.log(req.files.image)
         const imagefile = req.files.image
         const imageupload = await cloudinary.uploader.upload(imagefile.tempFilePath, {
             folder: 'profileImage'
         })
+        
         // console.log(imageupload)
         // console.log(imagefile)
         const { n, e, p, cp } = req.body
